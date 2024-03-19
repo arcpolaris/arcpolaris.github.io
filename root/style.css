@@ -1,0 +1,54 @@
+html {
+    height: 100vh;
+    width: 100vw;
+    --green: #00cc00;
+}
+
+body {
+    height: inherit;
+    width: inherit;
+
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2 {
+    display: inline;
+}
+
+p {
+    background: linear-gradient(90deg in oklab, red, var(--green), blue);
+    background-clip: text;
+    color: transparent;
+    position: relative;
+}
+
+p:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1.5px;
+    bottom: 2px;
+    background: inherit;
+    background-clip: initial;
+}
+
+.colortext :first-child {
+    color: red;
+}
+
+.colortext :nth-child(2) {
+    color: var(--green);
+}
+
+.colortext :last-child {
+    color: blue;
+}
+
+img {
+    width: 200px;
+}
