@@ -1,0 +1,66 @@
+body {
+    background-color: gray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.container{
+    width: 50%;
+    background: aliceblue;
+    border: aliceblue solid thick;
+}
+h1,
+h2,
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+    color: black;
+}
+a:link{
+    color: red;
+}
+a:visited{
+    color: green;
+}
+a:hovered{
+    color: hotpink;
+}
+a:active{
+    color: blue;
+}
+a.special{
+    color: orange;
+}
+#first p:first-child{
+    color: red;
+}
+#first p:last-child{
+    font-weight: bold;
+}
+#psudo::first-letter{
+    color: red;
+    font-size: 20em;
+}
+#psudo::before{
+    content: "Read This: ";
+    font-weight: bold;
+}
+#psudo::after{
+    content: " Remember This: ";
+    font-weight: bold;
+}
+
+*:not(html, body, head, .container, pre):hover{
+    transform: scale(1.1);
+}

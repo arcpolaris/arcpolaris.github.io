@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srivastava | Psudo Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to Web 2!</h1>
+        <h4>Today, we will mess with some Psudo Classes and Elements</h4>
+        <h2>Lets first dive deeper into CSS</h2>
+        <p>If we think of CSS in terms of selectors, properties, then a typical CSS entry would look like this:</p>
+        <pre>
+            <code>
+                selector {property: value}
+            </code>
+        </pre>
+        <p>To style the above, we need to add two tags together. We call this CSS Combinators</p>
+        <h2>What are Psudo Classes?</h2>
+        <p>Again if we think of CSS in terms of selectors properties and values, then a psudo class is an add-on to a
+            selector</p>
+        <p>A typical CSS entry calling on Psudo Class would look like this:</p>
+        <pre>
+            <code>
+                selector:psudo_class {property: value;}
+            </code>
+        </pre>
+        <h4>We use Psudo Class for Links</h4>
+        <p>If we want our <a href="#">link</a> to look different, we can simply add my css as follows: </p>
+        <pre>
+            <code>a {color: red;}</code>
+        </pre>
+        <p>If we want our <a href="http://google.com">link states</a> to look different then we will use a psudo class
+            like:</p>
+        <ul>
+            <li>:visited</li>
+            <li>:hover</li>
+            <li>:active</li>
+        </ul>
+        <p>But we can also make a <a class="special" href="#">new link</a> look different</p>
+        <h4>We can even call on specific selectors depending on their hierarchy.</h4>
+        <div id="first">
+            <p>this text will change</p>
+            <p>this will look different</p>
+        </div>
+        <h2>What are Psudo Elements?</h2>
+        <p id="psudo">Again, if we thiink of psudo classes as add-ons, then we can think of psudo elements as creating
+            new elements from a selector.</p>
+    </div>
+</body>
+
+</html>

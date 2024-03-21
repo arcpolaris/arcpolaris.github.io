@@ -1,13 +1,7 @@
-:root{
-    --green: #00cc00;
-    --main-font: "ofelia-text";
-}
-
 html {
     height: 100vh;
     width: 100vw;
 }
-
 body {
     height: inherit;
     width: inherit;
@@ -17,19 +11,19 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
 
+    font-family: "ofelia-text";
+}
 h2 {
     display: inline;
+    font-weight: 400;
 }
-
 a {
-    background: linear-gradient(90deg in oklab, red, var(--green), blue);
+    background: linear-gradient(90deg in oklab, red, #00cc00, blue);
     background-clip: text;
     color: transparent;
     position: relative;
 }
-
 a:hover::after {
     content: '';
     position: absolute;
@@ -40,19 +34,19 @@ a:hover::after {
     background: inherit;
     background-clip: initial;
 }
-
 .colortext :first-child {
     color: red;
 }
-
 .colortext :nth-child(2) {
-    color: var(--green);
+    color: lime;
 }
-
 .colortext :last-child {
     color: blue;
 }
-
 img {
     width: 200px;
+}
+canvas{
+    width: 100%;
+    height: 100%;
 }
