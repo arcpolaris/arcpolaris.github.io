@@ -5,26 +5,39 @@ html {
 body {
     height: inherit;
     width: inherit;
+    font-family: "ofelia-text";
+}
 
+.center-content {
     margin: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    font-family: "ofelia-text";
 }
+
 h2 {
     display: inline;
     font-weight: 400;
 }
-a {
+
+[href] {
+    cursor: pointer;
+}
+h2[href]:hover {
+    text-decoration: underline;
+}
+
+.rainbow-text {
     background: linear-gradient(90deg in oklab, red, #00cc00, blue);
     background-clip: text;
     color: transparent;
-    position: relative;
 }
-a:hover::after {
+.rainbow-text[href] {
+    position: relative;
+
+}
+.rainbow-text[href]:hover::after {
     content: '';
     position: absolute;
     left: 0;
@@ -34,19 +47,17 @@ a:hover::after {
     background: inherit;
     background-clip: initial;
 }
-.colortext :first-child {
+
+.red {
     color: red;
 }
-.colortext :nth-child(2) {
+.grn {
     color: lime;
 }
-.colortext :last-child {
+.blu {
     color: blue;
 }
+
 img {
     width: 200px;
-}
-canvas{
-    width: 100%;
-    height: 100%;
 }
