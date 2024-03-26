@@ -1,63 +1,81 @@
 html {
-    height: 100vh;
-    width: 100vw;
+	height: 100vh;
+	width: 100vw;
 }
 body {
-    height: inherit;
-    width: inherit;
-    font-family: "ofelia-text";
+	height: inherit;
+	width: inherit;
+	font-family: "ofelia-text";
 }
 
 .center-content {
-    margin: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+	margin: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.red {
+	color: red;
+}
+.grn {
+	color: lime;
+}
+.blu {
+	color: blue;
 }
 
 h2 {
-    display: inline;
-    font-weight: 400;
+	display: inline;
+	font-weight: 400;
 }
-
 [href] {
-    cursor: pointer;
+	cursor: pointer;
 }
 h2[href]:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 .rainbow-text {
-    background: linear-gradient(90deg in oklab, red, #00cc00, blue);
-    background-clip: text;
-    color: transparent;
+	background: linear-gradient(90deg in oklab, red, #00cc00, blue);
+	background-clip: text;
+	color: transparent;
 }
 .rainbow-text[href] {
-    position: relative;
+	position: relative;
 
 }
 .rainbow-text[href]:hover::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 1.5px;
-    bottom: 2px;
-    background: inherit;
-    background-clip: initial;
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 1.5px;
+	bottom: 2px;
+	background: inherit;
+	background-clip: initial;
+}
+.wheel-group-wrapper {
+	height: 70%;
+	aspect-ratio: 1.618;
+
+	display: grid;
+	align-content: stretch;
+	justify-items: stretch;
+	align-items: stretch;
+
+
+	gap: 20px;
+	grid-template-rows: 1.618fr 1fr;
+	grid-template-columns: 0.618fr 1fr;
 }
 
-.red {
-    color: red;
+.wheel-container {
+	grid-area: 1 / 1 / 2 / 2;
 }
-.grn {
-    color: lime;
+.wheel-text-window {
+	grid-area: 1 / 2 / 3 / 3;
 }
-.blu {
-    color: blue;
-}
-
-img {
-    width: 200px;
+.wheel-group-wrapper > * {
+	border: solid black medium;
 }
