@@ -9,19 +9,31 @@
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body class="center-content">
-	<div class="wheel-group-wrapper">
-		<div class="wheel-container">
-			<a class="wheel-slice" href="info_red.html" target="iframe_info" style="color: var(--red); --i:1;"></a>
-			<a class="wheel-slice" href="info_grn.html" target="iframe_info" style="color: var(--grn); --i:2;"></a>
-			<a class="wheel-slice" href="info_blu.html" target="iframe_info" style="color: var(--blu); --i:3;"></a>
-			<!--svg paths from Heroicons.com-->
-			<a href="index.html" target="_self" style="color:initial"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 icon center-self">
-			  <path stroke-linecap="round" stroke-linejoin="round" d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3"/>
-			</svg></a>
+<body class="hero-1">
+	<header class="absolute-header center-content">
+		<h1>
+			<span style="color:var(--red);" class="red">R</span><span style="color:var(--grn);" class="grn">G</span><span style="color:var(--blu);" class="blu">B</span>
+		</h1>
+	</header>
+	<main class="wheel-group-container center-content" style="height:100%">
+		<div class="wheel-group-wrapper center-content hero-2">
+			<div class="wheel-group" style="background-color: white;">
+				<div class="wheel-hero-box hero-3"></div>
+				<div class="wheel-container">
+					<a class="wheel-slice" href="info_red.html" target="iframe_info" style="color: var(--red); --i:1;"></a>
+					<a class="wheel-slice" href="info_grn.html" target="iframe_info" style="color: var(--grn); --i:2;"></a>
+					<a class="wheel-slice" href="info_blu.html" target="iframe_info" style="color: var(--blu); --i:3;"></a>
+					<!--svg paths from Heroicons.com-->
+					<a href="index.html" target="_self" style="color:initial">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 icon center-self">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3" />
+						</svg>
+					</a>
+				</div>
+				<iframe class="wheel-text-window" id="textFrame" name="iframe_info"src="info_placeholder.html"></iframe>
+			</div>
 		</div>
-		<iframe class="wheel-text-window" id="textFrame" name="iframe_info" src="info_placeholder.html"></iframe>
-	</div>
+	</main>
 </body>
 
 </html>
